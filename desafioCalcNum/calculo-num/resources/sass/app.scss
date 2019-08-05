@@ -1,0 +1,143 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.bloco {
+    width: 100%;
+}
+.campos, .btns {
+    display: inline-block;
+}
+.campos > *, .btns > * {
+    display: block;
+}
+#intervalo_de, #intervalo_ate {
+    display: inline-block;
+    width: 40%;
+}
+.navbar-brand img {
+    width: 35px;
+    margin-right: 10px;
+}
+.mclaurin .resultado,
+.mclaurin .rodadas {
+    width: 100%;
+    margin-top: 40px;
+}
+.campos.resultDerivate {
+    margin: 20px 0;
+}
+.campos input {
+    border: 1px solid #999;
+    border-radius: 5px;
+    height: 40px;
+    width: 90%;
+    padding: 0 5px;
+}
+.bloco .btns a {
+    border: 1px solid #999;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 7px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #FFF;
+    color: #000;
+}
+
+
+@media (max-width: 768px) {
+	
+	.tentativas, .blocoInfos {
+	    flex-wrap: nowrap!important;
+	}
+    .title {
+        font-size: 36px;
+    }
+    main .links .content {
+        margin-top: 0!important;
+    }
+    .links > a {
+        display: block;
+        margin: 15px 0;
+    }
+    .row.tentativas > div, .row.blocoInfos > div {
+        width: 18%;
+    }
+    .row.tentativas > div:last-child, .row.blocoInfos > div:last-child {
+        display: none;
+    }
+    .mclaurin .rodadas h2 {
+        font-size: 16px;
+    }
+    .mclaurin .rodadas > div {
+        width: 32%;
+    }
+    .mclaurin .rodadas > div {
+        width: 38%;
+        margin: 5px 0;
+    }
+    .mclaurin .rodadas > div.col-sm-3 {
+        width: 30%;
+    }
+    .mclaurin .resultado h4 {
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 0 15px;
+    }
+
+}
